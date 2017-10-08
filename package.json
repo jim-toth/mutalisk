@@ -2,7 +2,7 @@
   "name": "mutalisk",
   "author": "Jim Toth",
   "version": "1.0.0",
-  "description": "",
+  "description": "A WebGL shader runner client. Controlled by an Overlord. Proof-of-Concept.",
   "homepage": "https://github.com/jim-toth/mutalisk#readme",
   "repository": {
     "type": "git",
