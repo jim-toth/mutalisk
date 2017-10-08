@@ -1,0 +1,24 @@
+{
+  "name": "mutalisk",
+  "author": "Jim Toth",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/jim-toth/mutalisk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jim-toth/mutalisk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jim-toth/mutalisk/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "gl": "^4.0.4"
+  },
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  }
+}
