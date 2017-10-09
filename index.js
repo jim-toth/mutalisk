@@ -10,8 +10,13 @@ let RED, GREEN, BLUE, BLACK, VPOS, width, height,
     shaderName, do_work = false, nonces = [], results = [],
     startTime, endTime;
 
-width = 2048; // NB: Shouldn't make this more than 4000 ?
-height = 1;
+/*
+  Maximum height/width: 32,767 pixels
+  Maximum area: 268,435,456 pixels (e.g., 16,384 x 16,384)
+  https://stackoverflow.com/questions/6081483/maximum-size-of-a-canvas-element
+*/
+width = 16384; // this is max webkit will honor
+height = 1; // don't increase this without risk of crashing
 
 RED = fs.readFileSync('./src/programs/red.fs', 'utf8');
 GREEN = fs.readFileSync('./src/programs/green.fs', 'utf8');
